@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Maestro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"],
+    .regresar-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"] {
+      background-color: #4b86b4;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #75aadb;
+    }
+
+    .regresar-btn {
+      background-color: #888;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .regresar-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="registrar_maestro.php" method="POST">
+    <h2>Registrar Maestro</h2>
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Correo:</label>
+    <input type="email" name="correo" required>
+
+    <label>Contraseña:</label>
+    <input type="password" name="contrasena" required>
+
+    <label>Materia:</label>
+    <input type="text" name="materia" required>
+
+    <input type="submit" value="Registrar">
+    <a href="index.html" class="regresar-btn">Regresar</a>
+  </form>
+
+</body>
+</html>
