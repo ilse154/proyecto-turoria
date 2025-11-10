@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: proyecto-turorias
+    env: docker
+    plan: free
+    autoDeploy: true
